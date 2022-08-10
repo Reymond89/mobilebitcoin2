@@ -136,17 +136,12 @@ header .header__contain--p{
     color: var(--Grey);
 }
 /* Table */
-/* .main__container-tables{
-    margin-top: 48px;
-    width: 100%;
+.main__container-tables{
     display: flex;
-    align-items: baseline;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background-color: #E5E5E5;
-} */
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main__coins-table{
     width: 30%;
     min-width: 320px;
@@ -246,14 +241,29 @@ header .header__contain--p{
 .title__color--blue{
     color: var(--secondaryblue);
 }
+/* cards */
 .section_container_cards{
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 40px;
     width: 100%;
     height: auto;
     background-color: var(--warmblack) ;
+}
+.section_container_cards .patata{
+    position: absolute;
+    width: 37px;
+    height: 22px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('assets/icons/batata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
 }
 .card__title .card__subtitle{
     margin-top: 64px;
@@ -267,3 +277,318 @@ header .header__contain--p{
     
 
 }
+.section_container_cards .card__info{
+    margin-top: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: 1.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+
+}
+.contain__Cards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 32px;
+    width: 288px;
+    height: auto;
+    margin-bottom: 50px;
+}
+.description__card{
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+    align-self: center;
+    height: 152px;
+    background-color: var(--warmblack1);
+    /* border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+
+}
+.description__card .clock{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('assets/icons/clock.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 20px;
+    top: 10px;
+}
+.description__card .article__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 12px;
+    margin-top: 48px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--justwhite);
+}
+.description__card .article__info{
+    
+    text-align: left;
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.description__card .eyes{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/icons/eye.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 10px;
+}
+.description__card .dolar{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/icons/dollar-sign.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 10px;
+}
+.description__card .check{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/icons/check-circle.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 10px;
+}
+/* Image */
+.section__container--img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    min-width: 320px;
+}
+.section__container--img .img__batata{
+    width: 100%;
+    height: 100%;
+}
+.section__container--img .img__info{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--justwhite);
+}
+/* section plans */
+.section__container-plans{
+   
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #E5E5E5;
+}
+.plan__title{
+    margin-top: 64px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--warmblack);
+}
+.plan__info{
+    margin-top: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.article__plan-card{
+    margin-top: 50px;
+    position: relative;
+    scroll-snap-align: center;
+    width: 190px;
+    height: 247px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgb(1 3 26 / 40%);;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.ofert__card{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--justwhite);
+    padding: 8px;
+    /* border */
+    width: 105px;
+    height: 31px;
+    background: #F7931A;
+    border-radius: 8px;
+}
+.payment__card{
+    padding-top: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #000000;
+}
+.price__card{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+    color: #000000;
+}
+.dolar__Card{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #363636;
+    vertical-align: 33px;
+}
+.saving__Card{
+    margin-top: 16px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+    text-align: center;
+}
+.button__card{
+    display: inline-block;
+    margin-top: 18px;
+    width: 151px;
+    padding: 12px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: initial;
+    color: var(--warmblack);
+    /* border */
+    background-color: var(--offwhite);
+    border: 2px solid #F7931A;
+    border-radius: 4px; 
+}
+
+.button__card .arrow_card{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 70%;
+    background-image: url('assets/icons/orange-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+/* scroll */
+.section__cards{
+    display: flex;
+    height: 316px;
+    gap: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+/* footer */
+.footer__container{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: var(--bitcoinorange);
+}
+.footer__left-links{
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer__left-links ul{
+    list-style: none;
+}
+.footer__left-links ul li{
+    display: flex;
+    text-decoration: none;
+ 
+}
+.footer__left-links ul li a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--justwhite);
+}
+.footer_right-img{
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.batatabit2022{
+    position: absolute;
+    width: 55px;
+    height: 44px;
+    top: 40%;
+    left: 66%;
+    background-image: url('assets/imgs/logo-footer.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+    
