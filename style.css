@@ -297,7 +297,7 @@ header .header__contain--p{
     height: 150px;
     margin: 15px auto;
     padding: 5px;
-    background-color: red;
+    background-color: var(--warmblack1);
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 
