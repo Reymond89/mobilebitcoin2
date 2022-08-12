@@ -143,10 +143,11 @@ header .header__contain--p{
     scroll-snap-type: x proximity;
 }
 .main__coins-table{
+    position: relative;
     width: 30%;
     min-width: 320px;
     max-width: 900px;
-    height: 360px;
+    height: auto;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
@@ -205,7 +206,7 @@ header .header__contain--p{
 .table__date p{
     margin-top: 24px;
     width: 180px;
-    padding: 5px;
+    padding: 4px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -244,19 +245,19 @@ header .header__contain--p{
 /* cards */
 .section_container_cards{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 40px;
     width: 100%;
+    min-width: 320px;
+    margin-top: 50px;
     height: auto;
-    background-color: var(--warmblack) ;
+    padding: 20px 10px;
+    background-color:var(--warmblack);
 }
 .section_container_cards .patata{
     position: absolute;
     width: 37px;
     height: 22px;
     left: 50%;
+    top: 3px;
     transform: translate(-50%, -50%);
     background-image: url('assets/icons/batata.svg');
     background-position: center;
@@ -287,27 +288,18 @@ header .header__contain--p{
     color: #808080;
 
 }
-.contain__Cards{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    margin-top: 32px;
-    width: 288px;
-    height: auto;
-    margin-bottom: 50px;
-}
+
 .description__card{
-    margin-top: 20px;
     position: relative;
-    width: 300px;
-    align-self: center;
-    height: 152px;
+    width: 40%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 5px;
     background-color: var(--warmblack1);
-    /* border */
+    border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
 
 }
 .description__card .clock{
@@ -395,6 +387,7 @@ header .header__contain--p{
     transform: translate(-50%, -50%);
     left: 50%;
     top: 20%;
+    min-width: 320px;
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -461,7 +454,7 @@ header .header__contain--p{
     border-radius: 8px;
 }
 .payment__card{
-    padding-top: 50px;
+    padding-top: 40px;
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -488,7 +481,7 @@ header .header__contain--p{
     vertical-align: 33px;
 }
 .saving__Card{
-    margin-top: 16px;
+    /* margin-top: 16px; */
     font-family: 'Inter',sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -538,6 +531,7 @@ header .header__contain--p{
 .footer__container{
     width: 100%;
     height: 150px;
+    min-width: 320px;
     position: relative;
     background-color: var(--bitcoinorange);
 }

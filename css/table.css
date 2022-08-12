@@ -1,0 +1,16 @@
+.main__container-tables{
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+}
+.contain__Cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+}
+.section__container-plans{
+   
+    justify-content: center;
+   
+}
