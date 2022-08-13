@@ -530,9 +530,8 @@ header .header__contain--p{
 /* footer */
 .footer__container{
     width: 100%;
-    height: 150px;
-    min-width: 320px;
-    position: relative;
+    display: flex;
+    flex: row;
     background-color: var(--bitcoinorange);
 }
 .footer__left-links{
@@ -564,20 +563,17 @@ header .header__contain--p{
     color: var(--justwhite);
 }
 .footer_right-img{
-    width: 50%;
-    height: 150px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   width: 50%;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   align-self: center;
+   justify-content: center;
+  
 }
 .batatabit2022{
-    position: absolute;
-    width: 55px;
-    height: 44px;
-    top: 40%;
-    left: 66%;
+    width: 74px;
+    height: 56px;
     background-image: url('assets/imgs/logo-footer.svg');
     background-repeat: no-repeat;
     background-size: cover;
